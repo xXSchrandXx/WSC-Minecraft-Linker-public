@@ -1,5 +1,7 @@
 internalRepo/
 .settings/
+.classpath
+.gitattributes
 .project
 
 target/
