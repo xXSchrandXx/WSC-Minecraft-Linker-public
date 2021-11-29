@@ -56,6 +56,7 @@ public class WSCLinkerEvent extends Event implements IWSCLinkerEvent {
     }
 
     public WSCLinkerEvent(RemoteConsoleCommandSender sender, String type, HashMap<String, String> content) {
+        super(false);
         this.sender = sender;
         this.type = type;
         this.content = content;
