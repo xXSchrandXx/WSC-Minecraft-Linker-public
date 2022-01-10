@@ -1,4 +1,4 @@
-package de.xxschrandxx.wsc.spigot.listener;
+package de.xxschrandxx.wsc.bukkit.listener;
 
 import java.util.HashMap;
 
@@ -6,7 +6,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 
-import de.xxschrandxx.wsc.spigot.api.WSCLinkerEvent;
+import de.xxschrandxx.wsc.bukkit.api.WSCLinkerEvent;
 
 public class CommandListener implements Listener {
 

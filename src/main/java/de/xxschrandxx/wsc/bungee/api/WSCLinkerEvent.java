@@ -5,14 +5,15 @@ import java.util.HashMap;
 import com.google.gson.Gson;
 
 import de.xxschrandxx.wsc.universal.IWSCLinkerEvent;
-import net.borlcand.rcon.commandsender.RconCommandSender;
+import de.xxschrandxx.wsc.rcon.commandsender.RconCommandSenderBungee;
+
 import net.md_5.bungee.api.plugin.Event;
 
 public class WSCLinkerEvent extends Event implements IWSCLinkerEvent {
 
-    private final RconCommandSender sender;
+    private final RconCommandSenderBungee sender;
 
-    public RconCommandSender getSender() {
+    public RconCommandSenderBungee getSender() {
         return this.sender;
     }
 
@@ -42,7 +43,7 @@ public class WSCLinkerEvent extends Event implements IWSCLinkerEvent {
         return this.content.get(key);
     }
 
-    public WSCLinkerEvent(RconCommandSender sender, String type, HashMap<String, String> content) {
+    public WSCLinkerEvent(RconCommandSenderBungee sender, String type, HashMap<String, String> content) {
         this.sender = sender;
         this.type = type;
         this.content = content;

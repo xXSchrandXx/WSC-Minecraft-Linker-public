@@ -1,4 +1,4 @@
-package de.xxschrandxx.wsc.spigot.api;
+package de.xxschrandxx.wsc.bukkit.api;
 
 import java.util.HashMap;
 

@@ -11,12 +11,12 @@
 	</parent>
 
 	<groupId>de.xxschrandxx.wsc</groupId>
-	<artifactId>MinecraftLinker-public</artifactId>
+	<artifactId>MinecraftLinker-Public</artifactId>
 	<version>${global.plugin.version}</version>
 	<packaging>jar</packaging>
 
 	<name>WSC-MinecraftLinker-public</name>
-	<url>https://github.com/xXSchrandXx/WSC-MinecraftLinker</url>
+	<url>https://github.com/xXSchrandXx/WSC-MinecraftLinker-RCON</url>
 
 	<dependencies>
 		<!-- Spigot Dep -->
@@ -32,13 +32,11 @@
 			<artifactId>bungeecord-api</artifactId>
 			<version>${global.bungee.version}</version>
 		</dependency>
-		<!-- BungeeRcon -->
+		<!-- MinecraftLinker-RCON -->
 		<dependency>
-			<groupId>net.borlcand.rcon</groupId>
-			<artifactId>BungeeRcon</artifactId>
-			<version>2.1</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/internalRepo/BungeeRcon-2.1.jar</systemPath>
+			<groupId>de.xxschrandxx.wsc</groupId>
+			<artifactId>MinecraftLinker-RCON</artifactId>
+			<version>${global.plugin.version}</version>
 		</dependency>
 	</dependencies>
 
