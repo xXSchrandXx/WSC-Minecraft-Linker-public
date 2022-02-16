@@ -32,7 +32,7 @@ public class CommandListener implements Listener {
             result.put("message", "Given command empty or blank.");
         }
         if (result.isEmpty()) {
-            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), event.getString("command"));
+            Bukkit.getServer().dispatchCommand(event.getSender(), event.getString("command"));
             result.put("error", false);
         }
         event.sendResult(result);

@@ -31,7 +31,7 @@ public class CommandListener implements Listener {
             result.put("message", "Given command empty or blank.");
         }
         if (result.isEmpty()) {
-            ProxyServer.getInstance().getPluginManager().dispatchCommand(ProxyServer.getInstance().getConsole(), event.getString("command"));
+            ProxyServer.getInstance().getPluginManager().dispatchCommand(event.getSender(), event.getString("command"));
             result.put("error", false);
         }
         event.sendResult(result);
